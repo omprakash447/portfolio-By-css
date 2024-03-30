@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #fd7e14;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+}
+
+.container .logo{
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .navbar{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container .navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.container .navbar ul li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 20px 20px ;
+}
+.container .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b4580d98;
+    padding: 10px 10px 10px 10px;
+    border-radius:10px;
+}
+.container .navbar ul li a:hover{
+    color: black;
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 15px #1f1208;
+    transition: .5s ease;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 50px 50px  50px 50px;
+ 
+}
+.home .text{
+    margin-top: 100px;
+}
+.home .text h1{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    animation-name: om;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+@keyframes om{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+       
+    }
+    100%{
+        opacity: 0;
+        color: #fff;
+    }
+}
+.home .text p{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight:lighter;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    animation-name: om;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    
+}
+.home .text #btn2{
+    margin-left: 50px;
+
+}
+.home .text button{
+    height: 60px;
+    width: 150px;
+    background-color:#fd7e14;
+    border: 3px solid #fff;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    animation-name: prakas;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes prakas{
+    0%{
+        transform: rotate(0deg);
+   
+    }
+    100%{
+        transform: rotate(360deg);
+       
+    }
+}
+.home .text button:hover{
+
+    background-color: #fff;
+    border:3px solid #fd7e14 ;
+    color:#fd7e14;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor:col-resize;
+}
+.home .link{
+padding: 50px 50px 50px 50px;
+display: flex;
+flex-wrap: wrap;
+}
+.home .link ul{
+    list-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.home .link li{
+    padding: 20px 20px  20px 20px;
+}
+.home .link ul li a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #b4580d98 ;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+.home .link ul li a img{
+    height: 50px;
+    mix-blend-mode: darken;
+    margin-top: 50px;
+}
+.home .link ul li a img:hover{
+    transform: scale(1.5,1.5);
+    transition: .4s ease;
+}
+.home .link ul li a:hover{
+    font-size: 25px;
+    transition: .4s ease;
+
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+}
+.about .image{
+    height: 400px;
+    width: 400px;
+    background-color:#fd7e14;
+    box-shadow: 0px 0px 100px #45210372;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.about .image img{
+    height: 400px;
+    padding: 50px 50px 50px 50px;
+    border-radius: 50%;
+}
+.about .aboutme h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.about .aboutme p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.about .aboutme{
+    padding: 50px 50px 50px 50px;
+}
+.about .aboutme .head{
+    height: 60px;
+    width: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color:#fff;
+    color: #fd7e14;
+    animation-name: about;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+    .about .aboutme .head:hover{
+        background-color: #fd7e14;
+        border: 3px solid #fff;
+        color: #fff;
+        transition: .4s ease;
+    }
+    @keyframes about{
+        0%{
+            transform:rotate(360deg);
+            box-shadow: 5px 5px 10px #fff;
+        }
+        25%{
+            box-shadow: -5px -5px 10px #fff;
+        }
+        50%{
+            box-shadow: 5px 5px 10px #fff;
+        }
+        75%{
+            box-shadow: -5px -5px 10px #fff;
+        }
+        100%{
+            box-shadow: 5px 5px 10px #fff;
+        }
+    }
+    @keyframes font{
+        0%{
+            transform: rotate(-360deg);
+        }
+    }
+    .skills h1{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 35px;
+        font-family: sans-serif;
+        font-weight: bold;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skills img{
+        height: 150px;
+        mix-blend-mode: darken;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills img:hover{
+        transform: scale(1.5, 1.5);
+        transition: .4s ease;
+    }
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 50px 50px 50px;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .skills .html{
+        border-radius: 20px;
+        padding:20px 20px 20px 20px ;
+    }
+    .skills .css{
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+    .skills .javascript{
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+    .skills .photoshop{
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+    .skills .react{
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+    .skills .dsa{
+        border-radius: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+    .my{
+        font-size: 50px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        padding: 50px 50px 50px 50px;
+        margin-top: 100px;
+    }
+    .services{
+        height: 100%;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .services .main{
+        padding: 50px 50px 50px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-radius: 20px;
+    }
+    .services h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .services .Design h2{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: blue;
+    }
+    .services .Design p{
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .services .WebDevlopment h2{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: blue;
+    }
+    .services .WebDevlopment p{
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .services .GraphicsDesign h2{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: blue;
+    }
+    .services .GraphicsDesign p{
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .services img{
+        height: 50px;
+    }
+    .services .Design{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height:100%;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+        background-color:#fd7e14;
+        
+    }
+    .services .WebDevlopment{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height:100%;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+        background-color: #fd7e14;
+    }
+    .services .GraphicsDesign{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height:100%;
+        width: 100%;
+        padding: 50px 50px 50px 50px;
+        background-color:#fd7e14;
+        
+    }
+    .port{
+        margin-top: 100px;
+    }
+   .port h1{
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+   }
+   .port iframe{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+   }
+   .port iframe:hover{
+    transform: scale(1.5,1.5);
+    transition: .5s ease;
+   }
+   .port .project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+
+   }
+   .contacts{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 50px 50px 50px;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   .contacts .heading{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+   }
+   .contacts .address{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+   }
+   .contacts .address p{
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .contacts .Email{
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .contacts .Email p{
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .contacts .phone{
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .contacts .phone p{
+    font-size: 20px;
+    font-family: sans-serif;
+   }
+   .contacts .imf{
+    padding: 50px 50px 50px 50px;
+   }
+   .imf .address{
+    padding: 20px 20px 20px 20px;
+   }
+   .imf .Email{
+    padding: 20px 20px 20px 20px;
+   }
+   .imf .phone{
+    padding: 20px 20px 20px 20px;
+   }
+   .contacts .input input{
+    height: 50px;
+    width: 400px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+   }
+   .contacts .input input:hover{
+    background-color: #fd7e14;
+    color: #fff;
+   }
+   .contacts .input button{
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #fd7e14;
+    margin-top: 50px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="logo"><span style="color:#fff">Om</span> Prakash</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#port">PORTFOLIO</a></li>
+                <li><a href="#con">CONTACTS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="text">
+            <h1>I Am <br>Om Prakash Lenka<br>
+            A WebDesigner,<br>
+            and also<br>
+            a WebDevloper</h1>
+            <p>Far far away,behind the word mountains,far from the countries i am a devloper</p>
+            <button id="btn1">HIRE ME</button>
+            <button id="btn2">VIEW PORTFOLIO</button>
+            <div class="link">
+                <ul>
+                    <li><a href="#"><img src="https://i.pinimg.com/originals/27/d5/42/27d542e2e2626de4c08ee3d84aaabb7b.png" alt=""></a></li>
+                    <li><a href="#"><img src="https://th.bing.com/th/id/OIP.Mdi1k8Fa0E9SKsv-NL53cgHaHa?rs=1&pid=ImgDetMain" alt=""></a></li>
+                    <li><a href="#"><img src="https://th.bing.com/th/id/OIP.3eVrlLr3o1uDdFE6zPgNQQAAAA?rs=1&pid=ImgDetMain" alt=""></a></li>
+                    <li><a href="#"><img src="https://th.bing.com/th/id/OIP.bf4gk8L8bFgmXqLWdATZUgHaHa?rs=1&pid=ImgDetMain" alt=""></a></li>
+                    <li><a href="#"><img src="https://i.pinimg.com/originals/cc/59/e6/cc59e60637d6a7f3e28c9a8a8216d77b.png" alt=""></a></li>
+                    <li><a href="#"><img src="https://image.freepik.com/free-icon/twitter-logo_318-40459.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="image">
+        <img src="https://avatars.githubusercontent.com/u/150693046?v=4?s=400" alt="">
+    </div>
+    <div class="aboutme">
+        <div class="head">ABOUT ME</div>
+        <h1>MY STORY</h1>
+        <p>Hello guyes my self om prakash lenka.<br>
+        I am from jajpur,odisha,india.<br>
+    i have complitrd my 10th with 64.8%, and cmplited my 12th with 74.5%.<br>
+Now i am a full stack devloper , With so main skills...</p>
+    </div>
+</div>
+
+
+<div class="my" id="skills">MY SKILLS
+<div class="skills">
+      <div class="html">
+        <img src="https://th.bing.com/th/id/OIP.CRUhPMTL9JiK9BhjH3UJEAHaHa?rs=1&pid=ImgDetMain" alt=""><h1>HTML</h1></div>
+    <div class="css">
+        <img src="https://th.bing.com/th/id/OIP.ixEPvsIrHGEvCDJJB9EiLgHaJI?rs=1&pid=ImgDetMain" alt=""><h1>CSS</h1></div>
+    <div class="javascript">
+        <img src="https://mvaswani.com/JavaScript.png" alt="" style="margin-left: 30px;"><h1>JAVASCRIPT</h1></div>
+    <div class="photoshop">
+        <img src="https://www.shareicon.net/data/2015/08/03/79435_photoshop_512x512.png" alt=""  style="margin-left: 30px;"><h1>PHOTOSHOP</h1></div>
+    <div class="react">
+        <img src="https://th.bing.com/th/id/OIP._dD7iOKgq51aA1F1qp17NgHaHa?rs=1&pid=ImgDetMain" alt=""><h1>REACT</h1></div>
+    <div class="dsa">
+        <img src="https://th.bing.com/th/id/OIP.NCrmJv3kng_C3jg09atqYQHaHa?rs=1&pid=ImgDetMain" alt=""><h1>DSA</h1></div>
+</div>
+</div>
+
+
+<div class="services" id="services">
+    <h1>This is my Expertise,The<br>
+        Services i'll Provide My clients</h1>
+        <div class="main">
+        <div class="Design">
+            <img src="https://th.bing.com/th/id/OIP.jP3Wo9OgQv55x1-rk6d2lwAAAA?rs=1&pid=ImgDetMain" alt="">
+            <h2>UI&UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis impedit eos vitae optio, minima deserunt,<br>
+                exercitationem eligendi atque amet laudantium delectus voluptatum mollitia officiis velit.<br>
+                Perspiciatis labore repellendus officiis.</p>
+        </div>
+        <div class="WebDevlopment">
+            <img src="https://images.vexels.com/media/users/3/204038/list/32171678949026310a36e6aa73536f45-web-developer-logo-design.jpg" alt="" style="width: 50px;">
+            <h2>Web Devlopment</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis impedit eos vitae optio, minima deserunt,<br>
+                exercitationem eligendi atque amet laudantium delectus voluptatum mollitia officiis velit.<br>
+                Perspiciatis labore repellendus officiis.</p>
+        </div>
+        <div class="GraphicsDesign">
+            <img src="https://th.bing.com/th/id/OIP.aSxw6f6bxMN-RtWOQdll4gHaG3?rs=1&pid=ImgDetMain" alt="">
+            <h2>Graphics Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis impedit eos vitae optio, minima deserunt,<br>
+                exercitationem eligendi atque amet laudantium delectus voluptatum mollitia officiis velit.<br>
+                Perspiciatis labore repellendus officiis.</p>
+        </div>
+        </div>
+</div>
+<div class="port" id="port">
+    <h1>MY PROJECTS</h1>
+    <div class="project">
+        <iframe id="one" src="notalone.html" frameborder="0"></iframe>
+        <iframe id="two" src="helpinghand.html" frameborder="0"></iframe>
+        <iframe id="three" src="sai.html" frameborder="0"></iframe>
+        <iframe id="four" src="animation2.html" frameborder="0"></iframe>
+        <iframe id="five" src="moon.html" frameborder="0"></iframe>
+        <iframe id="six" src="my portfolio.html" frameborder="0"></iframe>
+    </div>
+</div>
+
+    <div class="contacts" id="con">
+        <h1 class="heading">CONTACT ME</h1>
+        <div class="imf">
+        <div class="address">
+            <h1>MY ADDRESS</h1>
+            <p>Jajpur,Odisha,India</p>
+        </div>
+
+        <div class="Email">
+            <h1>MY EMAIL</h1>
+            <p>ommprakashlenka958@gmail.com</p>
+        </div>
+
+        <div class="phone">
+            <h1>MY PHONE</h1>
+            <p>9178330413</p>
+        </div>
+        </div>
+        <div class="input">
+
+            <input type="text" placeholder="Enter name"><br>
+            <input type="email" name="" id="" placeholder="Enter Email"><br>
+            <input type="text" placeholder="Enter subject"><br>
+            <button>SEND MESSAGE</button>
+        </div>
+    </div>
+</body>
+</html>
